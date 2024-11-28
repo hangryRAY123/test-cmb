@@ -1,0 +1,124 @@
+.support {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  z-index: 6;
+  display: flex;
+
+  &__left {
+    width: 33%;
+    height: 100%;
+    position: relative;
+    background-color: #0d2644;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 44px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -142%;
+      top: -110%;
+      width: 1132px;
+      height: 1132px;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        #06a5da 0%,
+        rgba(6, 165, 218, 0) 100%
+      );
+      backdrop-filter: blur(97.30000305175781px);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -114%;
+      bottom: -110%;
+      width: 1132px;
+      height: 1132px;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        #06a5da 0%,
+        rgba(6, 165, 218, 0) 100%
+      );
+      backdrop-filter: blur(97.30000305175781px);
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 67%;
+    padding: 83px;
+    background-color: #fff;
+    flex-shrink: 0;
+
+    h2 {
+      font-size: 46px;
+      font-weight: 400;
+      line-height: 59px;
+      letter-spacing: 1px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #164884;
+      margin-bottom: 150px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #164884;
+      margin-bottom: 34px;
+      max-width: 550px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #fff;
+    margin-top: 30%;
+    z-index: 1;
+
+    h2 {
+      font-size: 46px;
+      font-weight: 400;
+      line-height: 59px;
+      letter-spacing: 1px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+  }
+
+  &__img {
+    width: 67%;
+    height: 100%;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

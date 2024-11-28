@@ -1,0 +1,113 @@
+.footer {
+  position: relative;
+  background-color: #16355a;
+  color: $color-default-white;
+  padding-top: 73px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: 0%;
+    width: 1132px;
+    height: 1132px;
+    background: radial-gradient(50% 50% at 50% 50%, #06A5DA 0%, rgba(6, 165, 218, 0) 100%);
+    backdrop-filter: blur(97.30000305175781px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    right: -15%;
+    width: 1132px;
+    height: 1132px;
+    background: radial-gradient(50% 50% at 50% 50%, #06A5DA 0%, rgba(6, 165, 218, 0) 100%);
+    backdrop-filter: blur(97.30000305175781px);
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 67px 100px;
+    z-index: 1;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 25%;
+  }
+
+  &__phone {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27.24px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-default-white;
+  }
+
+  &__mail {
+    font-size: 16.54px;
+    font-weight: 500;
+    line-height: 20.48px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(9, 174, 229, 1);
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    z-index: 1;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 67px;
+    width: 83%;
+  }
+
+  &__policy {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+
+  &__policy a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-default-white;
+  }
+
+  &__create {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 0.48);
+  }
+
+  &__create a {
+    color: $color-default-white;
+  }
+}
